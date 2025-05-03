@@ -24,12 +24,12 @@ export function Contact() {
     interest: 'general',
   });
 
-  const handleChange = (e) => {
+  const handleChange = (e : any) => {
     const { name, value } = e.target;
     setFormState(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e : any) => {
     e.preventDefault();
     // In a real implementation, this would submit the form data
     console.log('Form submitted:', formState);

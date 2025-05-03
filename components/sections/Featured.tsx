@@ -79,7 +79,7 @@ const featuredArtworks = [
 ];
 
 export function Featured() {
-  const [selectedArtwork, setSelectedArtwork] = useState(null);
+  const [selectedArtwork, setSelectedArtwork] : any = useState(null);
   const [isLiked, setIsLiked] = useState(false);
   
   return (
