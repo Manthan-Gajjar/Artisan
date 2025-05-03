@@ -79,7 +79,7 @@ export function Hero() {
             <Button 
               variant="outline" 
               size="lg" 
-              className="rounded-full px-6 border-white text-white hover:bg-white/10 text-sm"
+              className="rounded-full px-6 border-white text-white bg-white/10 text-sm"
             >
               Book a Viewing
             </Button>

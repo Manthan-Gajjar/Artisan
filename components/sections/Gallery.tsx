@@ -18,7 +18,7 @@ interface Artwork {
 
 // Gallery artwork data
 const artworks: Artwork[] = [
-  { id: 1, title: "Coastal Dreams", artist: "Emma Johnson", category: "painting", imageUrl: "https://images.pexels.com/photos/2693212/pexels-photo-2693212.jpeg?auto=compress&cs=tinysrgb&w=1200" },
+  { id: 1, title: "Coastal Dreams", artist: "Emma Johnson", category: "painting", imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZg6Xc7PKPJODeQRYgTYQZBo4KBqlgCKtwzw&s" },
   { id: 2, title: "Urban Fragments", artist: "Michael Chen", category: "photography", imageUrl: "https://images.pexels.com/photos/3467149/pexels-photo-3467149.jpeg?auto=compress&cs=tinysrgb&w=1200" },
   { id: 3, title: "Solitude", artist: "Rebecca Lin", category: "sculpture", imageUrl: "https://images.pexels.com/photos/6032282/pexels-photo-6032282.jpeg?auto=compress&cs=tinysrgb&w=1200" },
   { id: 4, title: "Digital Dreamscape", artist: "Jasper Williams", category: "digital", imageUrl: "https://images.pexels.com/photos/1910236/pexels-photo-1910236.jpeg?auto=compress&cs=tinysrgb&w=1200" },
@@ -27,8 +27,8 @@ const artworks: Artwork[] = [
   { id: 7, title: "Nocturne City", artist: "Daniel Wong", category: "photography", imageUrl: "https://images.pexels.com/photos/681335/pexels-photo-681335.jpeg?auto=compress&cs=tinysrgb&w=1200" },
   { id: 8, title: "Future Nature", artist: "Eliza Thompson", category: "digital", imageUrl: "https://images.pexels.com/photos/3493777/pexels-photo-3493777.jpeg?auto=compress&cs=tinysrgb&w=1200" },
   { id: 9, title: "Abstract Motion", artist: "Jean Pierre", category: "painting", imageUrl: "https://images.pexels.com/photos/1145720/pexels-photo-1145720.jpeg?auto=compress&cs=tinysrgb&w=1200" },
-  { id: 10, title: "Modernist Form", artist: "Victoria Lee", category: "sculpture", imageUrl: "https://images.pexels.com/photos/6112285/pexels-photo-6112285.jpeg?auto=compress&cs=tinysrgb&w=1200" },
-  { id: 11, title: "Metropolitan", artist: "Adrian Silva", category: "photography", imageUrl: "https://images.pexels.com/photos/3030030/pexels-photo-3030030.jpeg?auto=compress&cs=tinysrgb&w=1200" },
+  { id: 10, title: "Modernist Form", artist: "Victoria Lee", category: "sculpture", imageUrl: "https://images.unsplash.com/flagged/photo-1572392640988-ba48d1a74457?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXJ0JTIwd2FsbHBhcGVyfGVufDB8fDB8fHww" },
+  { id: 11, title: "Metropolitan", artist: "Adrian Silva", category: "photography", imageUrl: "https://khirki.in/cdn/shop/files/Artboard1_8be2aabe-8bfd-4f8a-a1de-58f87c56cfe0.jpg?v=1742194600" },
   { id: 12, title: "New Horizon", artist: "Maya Patel", category: "digital", imageUrl: "https://images.pexels.com/photos/2166456/pexels-photo-2166456.jpeg?auto=compress&cs=tinysrgb&w=1200" },
 ];
 

@@ -74,7 +74,7 @@ const featuredArtworks = [
     dimensions: "48\" × 36\"",
     price: "$5,800",
     description: "Incorporating traditional gold leaf techniques with contemporary composition, this artwork creates a stunning luminosity that shifts with changing light conditions.",
-    imageUrl: "https://images.pexels.com/photos/3964769/pexels-photo-3964769.jpeg?auto=compress&cs=tinysrgb&w=1200"
+    imageUrl: "https://w0.peakpx.com/wallpaper/112/733/HD-wallpaper-dancer-red-art-font-oil-painting-wall-blue-thumbnail.jpg"
   }
 ];
 
