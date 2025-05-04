@@ -61,20 +61,114 @@ export function Gallery() {
     ? artworks 
     : artworks.filter(artwork => artwork.category === selectedCategory);
 
+  // return (
+  //   <section id="gallery" className="py-24 relative bg-muted/30">
+  //     <div className="container mx-auto px-4">
+  //       <div className="max-w-3xl mx-auto text-center mb-12">
+  //         <Badge 
+  //           variant="outline" 
+  //           className="mb-4 px-3 py-1 text-sm border-primary/20 bg-background"
+  //         >
+  //           Our Collection
+  //         </Badge>
+  //         <h2 className="font-playfair text-3xl md:text-4xl lg:text-5xl font-semibold mb-4 tracking-tight">
+  //           Explore Our Gallery
+  //         </h2>
+  //         <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+  //           Discover a diverse collection of contemporary artwork from emerging and established artists.
+  //         </p>
+  //       </div>
+        
+  //       <Tabs 
+  //         defaultValue="all" 
+  //         value={selectedCategory}
+  //         onValueChange={(value) => setSelectedCategory(value as ArtworkCategory)}
+  //         className="w-full"
+  //       >
+  //         <div className="flex justify-center mb-10">
+  //           <TabsList className="bg-muted/60 backdrop-blur-sm p-1">
+  //             <TabsTrigger 
+  //               value="all" 
+  //               className="rounded-full px-4 py-1.5 text-sm"
+  //             >
+  //               All Works
+  //             </TabsTrigger>
+  //             <TabsTrigger 
+  //               value="painting" 
+  //               className="rounded-full px-4 py-1.5 text-sm"
+  //             >
+  //               Paintings
+  //             </TabsTrigger>
+  //             <TabsTrigger 
+  //               value="sculpture" 
+  //               className="rounded-full px-4 py-1.5 text-sm"
+  //             >
+  //               Sculptures
+  //             </TabsTrigger>
+  //             <TabsTrigger 
+  //               value="photography" 
+  //               className="rounded-full px-4 py-1.5 text-sm"
+  //             >
+  //               Photography
+  //             </TabsTrigger>
+  //             <TabsTrigger 
+  //               value="digital" 
+  //               className="rounded-full px-4 py-1.5 text-sm"
+  //             >
+  //               Digital Art
+  //             </TabsTrigger>
+  //           </TabsList>
+  //         </div>
+          
+  //         <motion.div 
+  //           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8"
+  //           variants={containerVariants}
+  //           initial="hidden"
+  //           animate="visible"
+  //           key={selectedCategory}
+  //         >
+  //           {filteredArtworks.map((artwork) => (
+  //             <motion.div 
+  //               key={artwork.id}
+  //               className="group relative overflow-hidden rounded-lg shadow-md bg-card h-full"
+  //               variants={itemVariants}
+  //             >
+  //               <div className="relative aspect-[4/5] overflow-hidden">
+  //                 <Image 
+  //                   src={artwork.imageUrl}
+  //                   alt={artwork.title}
+  //                   fill
+  //                   className="object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+  //                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+  //                 />
+  //                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+  //                   <div className="absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300 ease-out">
+  //                     <p className="text-white/80 text-sm">{artwork.artist}</p>
+  //                     <h3 className="font-playfair text-lg font-medium">{artwork.title}</h3>
+  //                   </div>
+  //                 </div>
+  //               </div>
+  //             </motion.div>
+  //           ))}
+  //         </motion.div>
+  //       </Tabs>
+  //     </div>
+  //   </section>
+  // );
   return (
     <section id="gallery" className="py-24 relative bg-muted/30">
-      <div className="container mx-auto px-4">
-        <div className="max-w-3xl mx-auto text-center mb-12">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-3xl mx-auto text-center mb-8 sm:mb-12 px-2 sm:px-0">
           <Badge 
             variant="outline" 
             className="mb-4 px-3 py-1 text-sm border-primary/20 bg-background"
           >
             Our Collection
           </Badge>
-          <h2 className="font-playfair text-3xl md:text-4xl lg:text-5xl font-semibold mb-4 tracking-tight">
+          <h2 className="font-playfair text-3xl sm:text-4xl lg:text-5xl font-semibold mb-4 tracking-tight">
             Explore Our Gallery
           </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+          <p className="text-muted-foreground text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
             Discover a diverse collection of contemporary artwork from emerging and established artists.
           </p>
         </div>
@@ -85,43 +179,23 @@ export function Gallery() {
           onValueChange={(value) => setSelectedCategory(value as ArtworkCategory)}
           className="w-full"
         >
-          <div className="flex justify-center mb-10">
-            <TabsList className="bg-muted/60 backdrop-blur-sm p-1">
-              <TabsTrigger 
-                value="all" 
-                className="rounded-full px-4 py-1.5 text-sm"
-              >
-                All Works
-              </TabsTrigger>
-              <TabsTrigger 
-                value="painting" 
-                className="rounded-full px-4 py-1.5 text-sm"
-              >
-                Paintings
-              </TabsTrigger>
-              <TabsTrigger 
-                value="sculpture" 
-                className="rounded-full px-4 py-1.5 text-sm"
-              >
-                Sculptures
-              </TabsTrigger>
-              <TabsTrigger 
-                value="photography" 
-                className="rounded-full px-4 py-1.5 text-sm"
-              >
-                Photography
-              </TabsTrigger>
-              <TabsTrigger 
-                value="digital" 
-                className="rounded-full px-4 py-1.5 text-sm"
-              >
-                Digital Art
-              </TabsTrigger>
+          <div className="flex justify-center mb-6 sm:mb-10 px-2 overflow-x-auto">
+            <TabsList className="bg-muted/60 backdrop-blur-sm p-1 flex space-x-2 whitespace-nowrap">
+              {['all','painting','sculpture','photography','digital'].map((cat) => (
+                <TabsTrigger 
+                  key={cat}
+                  value={cat}
+                  className="rounded-full px-3 sm:px-4 py-1.5 text-sm sm:text-base flex-shrink-0"
+                >
+                  {cat === 'all' ? 'All Works' 
+                    : cat.charAt(0).toUpperCase() + cat.slice(1)}
+                </TabsTrigger>
+              ))}
             </TabsList>
           </div>
           
           <motion.div 
-            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8"
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 md:gap-8"
             variants={containerVariants}
             initial="hidden"
             animate="visible"
@@ -142,9 +216,11 @@ export function Gallery() {
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <div className="absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300 ease-out">
-                      <p className="text-white/80 text-sm">{artwork.artist}</p>
-                      <h3 className="font-playfair text-lg font-medium">{artwork.title}</h3>
+                    <div className="absolute bottom-0 left-0 right-0 p-3 sm:p-4 text-white transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300 ease-out">
+                      <p className="text-white/80 text-xs sm:text-sm">{artwork.artist}</p>
+                      <h3 className="font-playfair text-base sm:text-lg font-medium mt-1">
+                        {artwork.title}
+                      </h3>
                     </div>
                   </div>
                 </div>
@@ -154,5 +230,5 @@ export function Gallery() {
         </Tabs>
       </div>
     </section>
-  );
+  );  
 }
